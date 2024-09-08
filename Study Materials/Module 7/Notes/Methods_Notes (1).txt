@@ -1,0 +1,39 @@
+Programming Paradigms:
+1. Unstructured Style
+2. Structured/Procedural/Functional Style
+3. Object-Oriented Style
+
+
+* In unstructured style of programming, large or complex programs are coded as a single-continuous block of code. It makes the program code hardly-readable. Hence, it is difficult to modify and debug.
+* Supports limited basic data types.
+* Programs are executed sequentially and uses unstructured control statements such as goto.
+* Suitable only for small and simple projects.
+
+Example: Earlier versions of BASIC, COBOL and FORTRAN. 
+
+
+* In structured style of programming, large or complex programs are converted into smaller blocks of code so that managing the code becomes easy. Producing readable code.
+* Hence, it is easier to modify and debug. Supports variety of data types.
+* Programs are executed sequentially and uses structured control statements such as if/else/for/while, etc.
+* Suitable for large and complex projects.
+
+* These blocks of code are implemented as functions.
+* Therefore, a function is a block of code or collection of statements grouped together to perform a certain task or operation.
+However, the block of code only runs/executes when the function is called.
+
+Example: C, C++, Visual Basic, etc.
+
+
+1. A method, like a function, is a block of code or collection of statements grouped together to perform a certain task or operation. The difference is that a method is associated with an object, while a function is not.
+2. In Java, methods are used to implement the behavior of the object.
+3. A method must always be declared within a class.
+4. A method can directly access all the instance variables of the enclosing class.
+
+
+Method declarations have six components, in order:
+1. Modifiers— decides the visibility and accessibility of the method.
+2. The return type—the data type of the value returned by the method, or void if the method does not return a value.
+3. The method name— identifier, name of the behavior
+4. The parameter list in parenthesis—a comma-separated list of input parameters, preceded by their data types. If there are no parameters, we must use empty parentheses.
+5. An exception list— list of exceptions ducked.
+6. The method body, enclosed between braces—the method's code, activity/behavior exhibited by the object.
