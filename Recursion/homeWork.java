@@ -2,23 +2,25 @@ package Recursion;
 
 import java.util.ArrayList;
 
-public class leetCode78 {
+public class homeWork {
     static ArrayList<String> arr = new ArrayList<>() ;  // Global 
-    public static void printSubsets(int i , String s , String ans) {
-        if(i==s.length()){
+    public static void printSubsets(int i , String s , int k , String ans) {
+        if(i==s.length() || ans.length() == k){
             // System.out.println(ans);
             arr.add(ans);
             return ;
         }
         // char ch = s.charAt(i) ;
-        printSubsets(i+1, s, ans);   // Not Take
+        printSubsets(i+1, s , k , ans);   // Not Take
         ans += s.charAt(i) ;
-        printSubsets(i+1, s, ans); // Take
+        printSubsets(i+1, s , k , ans); // Take
     }
     public static void main(String[] args) {
-        String s = "abcd" ;
+        String s = "123456" ;
         arr = new ArrayList<>();  // reset 
-        printSubsets(0,s,"");
+        int k = 4 ;
+        printSubsets(0,s,k,"");
         System.out.println(arr);
     }
+    
 }
