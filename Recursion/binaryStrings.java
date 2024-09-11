@@ -12,8 +12,8 @@ public class binaryStrings {
         // printString(s + 1, n);
         // printString(s + 0, n);
         if(m == 0 || s.charAt(m-1)=='0'){
-        printString(s+1, n);
-        printString(s+0, n);
+            printString(s+1, n);
+            printString(s+0, n);
         }
         else printString(s+0, n);
     }
