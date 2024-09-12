@@ -19,8 +19,7 @@ public class mergeSort {
         while (j < b.length)
             c[k++] = b[j++];
         while (i < a.length)
-            c[k++] = a[i++];
-            
+            c[k++] = a[i++]; 
     }
 
     public static void mergesort(int[] arr) {
