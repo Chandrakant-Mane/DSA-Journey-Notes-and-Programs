@@ -1,6 +1,7 @@
 package AdvanceSorting;
 
-public class quickSortAlgo {
+public class leetCodeQ215 {
+    static int ans ;
     public static void swap(int[] arr , int i , int j ){
         int temp = arr[i] ;
         arr[i] = arr[j] ;
@@ -31,19 +32,33 @@ public class quickSortAlgo {
         }
         return correctIdx ;
     }
-    public static void quickSort(int[] arr , int lo , int hi){
-        if(lo>=hi) return ;
+    public static void quickSelect(int[] arr , int lo , int hi , int k){
+        if(lo>hi) return ;
+        // if(lo==hi){  //  Not Really Required .
+        //     if(lo==k-1)  ans = arr[lo]; 
+        //     return ;
+        // }
         // pivot (arr[lo]) ko sahi jagha rekho ..
         // And left part me <= pivot 
         int idx = partition(arr,lo,hi);
-        quickSort(arr, lo, idx-1);
-        quickSort(arr, idx+1, hi);
+        if(idx == k-1){
+            ans = arr[idx];
+            return ;
+        }
+        if(k-1 < idx){
+            quickSelect(arr, lo, idx-1 , k);
+        }
+        else 
+        quickSelect(arr, idx+1, hi , k);
     }
     public static void main(String[] args) {
-        int[] arr = {3,2,1,5,6,4 } ;
+        int[] arr = {4,9,1,2,6,5,8} ;
         print(arr);
+        int k = 2  ;
+        ans = -1 ;
         int n = arr.length ;
-        quickSort(arr, 0 , n-1);
+        quickSelect(arr, 0 , n-1 , n-k+1);
         print(arr);
+        System.out.println(ans);
     }
-} 
+}
