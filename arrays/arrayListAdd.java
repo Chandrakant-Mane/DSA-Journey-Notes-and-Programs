@@ -2,7 +2,7 @@ package arrays;
 
 import java.util.ArrayList;
 
-public class arrayListAdd {
+public class arrayListAdd{
     public static void main(String[] args) {
         ArrayList<Integer> list = new ArrayList<>();
         System.out.println(list+ " " + list.size());

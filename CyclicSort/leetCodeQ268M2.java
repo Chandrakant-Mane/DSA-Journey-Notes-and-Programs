@@ -11,6 +11,5 @@ public class leetCodeQ268M2 {
         for (int i = 0; i <= n; i++) {
             if(b[i] == false) System.out.print(i); 
         }
-        
     }
 }
