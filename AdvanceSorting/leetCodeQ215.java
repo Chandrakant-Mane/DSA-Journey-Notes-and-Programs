@@ -35,7 +35,7 @@ public class leetCodeQ215 {
     public static void quickSelect(int[] arr , int lo , int hi , int k){
         if(lo>hi) return ;
         // if(lo==hi){  //  Not Really Required .
-        //     if(lo==k-1)  ans = arr[lo]; 
+        //     if(lo==k-1 )  ans = arr[lo]; 
         //     return ;
         // }
         // pivot (arr[lo]) ko sahi jagha rekho ..
