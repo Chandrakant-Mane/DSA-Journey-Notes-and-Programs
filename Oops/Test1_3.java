@@ -33,7 +33,7 @@ public class Test1_3 {
         c.add(10, 20);
         c.add(10,20,30) ;
         c.add(10,20,30,40) ;
-        c.add(10,20,30,40) ;
+        c.add(10,20,30,40 ,50) ;
 
         System.out.println();
 
@@ -44,6 +44,6 @@ public class Test1_3 {
         ac.add(10,20,30) ;
         ac.add(10,20,30,40) ;
         ac.add(10,20,30,40,50) ;
-        
+
     }
 }
