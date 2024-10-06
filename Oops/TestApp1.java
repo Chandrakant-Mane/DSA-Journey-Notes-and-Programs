@@ -8,13 +8,13 @@ public class TestApp1 {
     }
 }
     // Base Class Or Super Class Or Parent Class
-class Person{
+class Person9{
     public String name ;
     public String address ;
     public int age ;
 }
     // Derived Class Or Sub Class Or Child Class 
-class Student2 extends Person{
+class Student2 extends Person9{
     // Instance Variables 
     // String name ;
     // String address ;

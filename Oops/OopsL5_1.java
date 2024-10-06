@@ -1,12 +1,12 @@
 package Oops;
 
-abstract class Plane1{
+abstract class Plane2{
     public abstract void takeoff() ;
     public abstract void fly() ;
     public abstract void land() ;
 }
 
-class CargoPlane1 extends Plane1{
+class CargoPlane1 extends Plane2{
     public void takeoff(){
         System.out.println("CargoPlane tookoff...");
     }
@@ -18,7 +18,7 @@ class CargoPlane1 extends Plane1{
     }
 }
 
-class PassengerPlane1 extends Plane1{
+class PassengerPlane1 extends Plane2{
     public void takeoff(){
         System.out.println("PassengerPlane tookoff...");
     }
@@ -30,7 +30,7 @@ class PassengerPlane1 extends Plane1{
     }
 }
 
-class FighterPlane1 extends Plane1{
+class FighterPlane1 extends Plane2{
     public void takeoff(){
         System.out.println("FighterPlane tookoff...");
     }
@@ -43,7 +43,7 @@ class FighterPlane1 extends Plane1{
 }
 
 class Airport1{
-    public void allowPlane(Plane1 ref){
+    public void allowPlane(Plane2 ref){
         ref.takeoff(); 
         ref.fly(); 
         ref.land(); 

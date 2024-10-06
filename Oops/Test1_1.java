@@ -1,6 +1,6 @@
 package Oops;
 
-class Sample1{
+class Sample2{
     public void methodone(String s){
         System.out.println("String version....");
     }
@@ -14,7 +14,7 @@ class Sample1{
 
 public class Test1_1 {
     public static void main(String[] args) {
-        Sample1 s = new Sample1() ;
+        Sample2 s = new Sample2() ;
         s.methodone(new String("Sachin")) ;  // String 
         s.methodone(new StringBuffer("Sachin"));  // StringBuffer 
 

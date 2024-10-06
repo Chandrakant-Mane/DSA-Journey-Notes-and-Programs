@@ -1,14 +1,14 @@
 package Oops;
 
-class Animal{}
-class Monkey extends Animal{
+class Animal1{}
+class Monkey1 extends Animal1{
 
 }
 class AnimalApp{
-    public void m1(Monkey m){
+    public void m1(Monkey1 m){
         System.out.println("Monkey version...");
     }
-    public void m1(Animal a){
+    public void m1(Animal1 a){
         System.out.println("Animal version...");
     }
 }
@@ -16,14 +16,14 @@ class AnimalApp{
 public class Test1_2 {
     public static void main(String[] args) {
         AnimalApp a = new AnimalApp() ;
-        Monkey m = new Monkey() ;
+        Monkey1 m = new Monkey1() ;
         a.m1(m) ; // m(Monkey) ---->  Monkey
 
-        Animal animal = new Animal() ;
+        Animal1 animal = new Animal1() ;
         a.m1(animal) ; //animal ----> Animal
 
         // Parent obj = new Child() ;   Valid 
-        Animal an = new Monkey() ;
+        Animal1 an = new Monkey1() ;
         a.m1(an) ; // an(Animal) ----> Animal 
     }
 }
