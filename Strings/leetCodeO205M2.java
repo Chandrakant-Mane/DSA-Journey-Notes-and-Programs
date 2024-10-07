@@ -1,9 +1,11 @@
 package Strings;
 
-public class leetCodeQ2 {
+public class leetCodeO205M2 {
     public static void main(String[] args) {
-        String s = "badc";
-        String t = "baba";
+        
+        // With Out using another arr
+        String s = "egg";
+        String t = "add";
         char[] a = new char[128];
         for (int i = 0; i < s.length(); i++) {
             char ch = s.charAt(i);
@@ -17,21 +19,23 @@ public class leetCodeQ2 {
                 }
             }
         }
-        char[] b = new char[128];
-        for (int i = 0; i < t.length(); i++) {
+        for (int i = 0; i < 128; i++) {
+            a[i] = '\0' ;
+            
+        }
+        for (int i = 0; i < s.length(); i++) {
             char ch = t.charAt(i);
             char dh = s.charAt(i);
             int idx = (int)ch ;
-            if(b[idx] == '\0')  b[idx] = dh;
+            if(a[idx] == '\0')  a[idx] = dh;
             else{
-                if(b[idx] != dh){
+                if(a[idx] != dh){
                     System.out.println("False");
                     break;
                 }
             }
         }
+
         System.out.println(a);
-        System.out.println(b);
     }
-    
 }

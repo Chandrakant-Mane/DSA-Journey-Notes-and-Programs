@@ -2,7 +2,7 @@ package Strings;
 
 import java.util.Arrays;
 
-public class leetCodeQ1 {
+public class leetCodeQ242 {
     public static void main(String[] args) {
         String s = new String("anagram");
         String t = new String("naearam");

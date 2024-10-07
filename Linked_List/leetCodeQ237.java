@@ -3,10 +3,9 @@ package Linked_List;
 class ListNode {
     int val;
     ListNode next;
-    ListNode head ;
+    // ListNode head ;
     ListNode(int x) { val = x; }
 
-    
 }
 
 class Solution{
@@ -15,6 +14,7 @@ class Solution{
     ListNode node ;
     void insertAtTail(int val){
         ListNode temp = new ListNode(val) ;
+        if(temp.val == 5) node = temp ;
         if(head == null) head = tail = temp ;
         else{
             tail.next = temp ;
@@ -29,15 +29,7 @@ class Solution{
         }
         System.out.println();
     }
-    ListNode traverse(){
-        ListNode temp = head;
-        while (temp != null) {
-            if(temp.val == 5)  return temp ;
-            temp = temp.next ;
-        }
-        return temp ;
-    }
-    void deleteNode(ListNode node) {
+    void deleteNode() {
         node.val = node.next.val ;
         node.next = node.next.next ;    
     }
@@ -52,8 +44,7 @@ public class leetCodeQ237 {
         list.insertAtTail(9);
 
         list.display(); 
-        ListNode node = list.traverse();
-        list.deleteNode(node);
+        list.deleteNode();
         list.display();
 
     }
