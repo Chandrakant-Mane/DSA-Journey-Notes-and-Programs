@@ -1,6 +1,6 @@
 package arrays;
 
-public class leetCodeQ2 {
+public class leetCodeQ189 {
     private static void reverse(int[] nums, int i, int j) {
         while (i<=j) {
             int temp = nums[i];

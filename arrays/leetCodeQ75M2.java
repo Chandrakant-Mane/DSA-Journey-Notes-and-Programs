@@ -1,6 +1,6 @@
 package arrays;
 
-public class leetCodeQ3M2 {
+public class leetCodeQ75M2 {
     public static void swap(int[] arr, int mid , int lo){
         int temp = arr[mid];
         arr[mid] = arr[lo];

@@ -1,6 +1,6 @@
 package arrays;
 
-public class leetCodeQ3 {
+public class leetCodeQ75 {
     public static void main(String[] args) {
         // Q. Sort the array of 0's , 1's and 2's . (Dutch Flag Algorithm )
 
