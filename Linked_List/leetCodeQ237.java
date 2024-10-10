@@ -1,12 +1,12 @@
 package Linked_List;
 
-class ListNode {
-    int val;
-    ListNode next;
-    // ListNode head ;
-    ListNode(int x) { val = x; }
+// class ListNode {
+//     int val;
+//     ListNode next;
+//     // ListNode head ;
+//     ListNode(int x) { val = x; }
 
-}
+// }
 
 class Solution{
     ListNode head ;
