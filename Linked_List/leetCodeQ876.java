@@ -1,12 +1,12 @@
 package Linked_List;
 
-class Node{
-    int val ;
-    Node next ;
-    Node(int val){
-        this.val = val ;
-    }
-}
+// class Node{
+//     int val ;
+//     Node next ;
+//     Node(int val){
+//         this.val = val ;
+//     }
+// }
 
 public class leetCodeQ876 {
     public static int middleNode(Node head) {
