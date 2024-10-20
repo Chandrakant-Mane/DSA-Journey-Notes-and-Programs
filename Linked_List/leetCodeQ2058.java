@@ -1,6 +1,6 @@
 package Linked_List;
 
-public class leetCode2058 {
+public class leetCodeQ2058 {
     public static void display(ListNode head){
         ListNode temp = head ;
         while (temp != null) {
