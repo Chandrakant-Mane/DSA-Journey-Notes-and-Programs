@@ -1,13 +1,13 @@
 package Linked_List;
 
-class dNode{
-    int val ;
-    dNode next ;
-    dNode prev ;
-    dNode(int val){
-        this.val = val ;
-    }
-}
+// class dNode{
+//     int val ;
+//     dNode next ;
+//     dNode prev ;
+//     dNode(int val){
+//         this.val = val ;
+//     }
+// }
 
 class DCLL{
     dNode head ;
@@ -48,7 +48,7 @@ class DCLL{
         size++ ;
     }
 
-    void insertAtHead(int val){
+    void insertAtHead(int val){ 
         dNode temp = new dNode(val);
         if(size == 0) head = tail = temp ;
         else{

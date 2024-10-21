@@ -124,9 +124,9 @@ class SimplyCircularLL{
         for(int i = 1 ; i < size-1 ; i++){
             temp = temp.next ;
         }
-        temp.next = null;
+        temp.next = head;
         tail = temp ;
-        tail.next = head ;
+        // tail.next = head ;
         size-- ;
 
         System.out.println();
@@ -137,10 +137,10 @@ class SimplyCircularLL{
             deleteAtHead();
             return ;
         }
-        // if(idx == size-1){
-        //     deleteAtTail();
-        //     return ;
-        // }
+        if(idx == size-1){
+            deleteAtTail();
+            return ;
+        }
         if(idx < 0 || idx >= size){
             throw new Error("BHAI INDEX INVALID HAI") ;
         }
@@ -148,12 +148,7 @@ class SimplyCircularLL{
         for(int i = 1 ; i < idx ; i++){
             temp = temp.next ;
         }
-        if(temp.next == tail){
-            temp.next = null ;
-            tail = temp ;
-            tail.next = head ;
-        }
-        else temp.next = temp.next.next ;
+        temp.next = temp.next.next ;
         size-- ;
         System.out.println();
 
@@ -208,6 +203,8 @@ public class singlyCircularLL {
         list.display();
 
         list.sizemethod() ;
+        list.deleteAtTail();
+        list.display();
 
 
 
