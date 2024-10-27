@@ -14,7 +14,7 @@ public class linkedListImplementation {
     public static class Stack{
         Node head ;
         Node tail ;
-        int size = 0 ;
+        private int size = 0 ;
 
         void push(int x){
             Node temp = new Node(x);
@@ -58,8 +58,13 @@ public class linkedListImplementation {
             return false ;
         }
 
-        void display(){
-            displayRec(head);
+        void displayRev(){
+            Node temp = head ;
+            while(temp != null){
+                System.out.print(temp.val + " ");
+                temp = temp.next ;
+            }
+            System.out.println();
         }
 
         void displayRec(Node h){
@@ -67,6 +72,12 @@ public class linkedListImplementation {
             displayRec(h.next);
             System.out.print(h.val + " ");
         }
+        void display(){
+            displayRec(head);
+            System.out.println();
+        }
+
+
 
     }
 
@@ -81,6 +92,7 @@ public class linkedListImplementation {
         System.out.println(st.pop());
         System.out.println(st.size());
         st.display();
+        st.displayRev();
         System.out.println();
         System.out.println(st.isEmpty());
         System.out.println(st.tail.val);
