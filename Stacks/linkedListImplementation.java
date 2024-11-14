@@ -3,8 +3,6 @@ package Stacks;
 public class linkedListImplementation {
     public static class Node{
         int val ;
-        Node head ;
-        Node tail ;
         Node next ;
         Node(int val){
             this.val = val ;
@@ -20,13 +18,12 @@ public class linkedListImplementation {
             Node temp = new Node(x);
             if(size == 0){
                 head = tail = temp  ;
-                size++ ;
-            } 
+            }
             else{ 
                 temp.next = head ;
                 head = temp ;
-                size++ ;
             }
+            size++ ;
         }
 
         int size(){
@@ -49,13 +46,11 @@ public class linkedListImplementation {
                 System.out.println("Stack is empty...");
                 return -1 ;
             }
-            int x = head.val ;
-            return x ;
+            return head.val;
         }
 
         boolean isEmpty(){
-            if(size == 0) return true ;
-            return false ;
+            return size == 0;
         }
 
         void displayRev(){

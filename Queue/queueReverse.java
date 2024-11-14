@@ -5,15 +5,15 @@ import java.util.Queue;
 import java.util.Stack;
 
 public class queueReverse {
-    static Queue<Integer> que ; 
-    public static void print(){
+    // static Queue<Integer> que ; 
+    public static void print(Queue<Integer> que){
         // while (!que.isEmpty()) {
         //     System.out.print(que.peek() + " ");
         //     que.remove() ;
         // }
         System.out.println(que);
     }
-    public static void reverseQueue(){
+    public static void reverseQueue(Queue<Integer> que ){
         Stack<Integer> st = new Stack<>() ;
         while (!que.isEmpty()){
             st.push(que.remove())  ;
@@ -23,7 +23,7 @@ public class queueReverse {
         }
     }
     public static void main(String[] args) {
-        que = new LinkedList<>() ;
+        Queue<Integer> que = new LinkedList<>() ;
         que.add(10) ;
         que.add(20) ;
         que.add(30) ;
@@ -36,9 +36,9 @@ public class queueReverse {
         que.add(100) ;
         System.out.println(que);
 
-        reverseQueue() ;
+        reverseQueue(que) ;
        
-        print() ;
+        print(que) ;
 
 
     }
