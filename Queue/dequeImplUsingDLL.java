@@ -97,6 +97,25 @@ public class dequeImplUsingDLL {
             }
             return rear.data;
         }
+
+        void displayFront(){
+            Node temp = front ;
+            while(temp != null){
+                System.out.print(temp.data + " ");
+                temp = temp.next ;
+            }
+            System.out.println();
+        }
+        
+        void displayRear() {
+            Node temp = rear;
+            while (temp != null) {
+                System.out.print(temp.data + " ");
+                temp = temp.prev;
+            }
+            System.out.println();
+        }
+        
     }
     public static void main(String[] args) {
         Deque dq = new Deque() ;
@@ -133,7 +152,15 @@ public class dequeImplUsingDLL {
 
         System.out.println(dq.isEmpty());
 
+        dq.insertRear(1) ;
+        dq.insertRear(2) ;
+        dq.insertRear(3) ;
+        dq.insertRear(4) ;
+        dq.insertRear(5) ;
 
+        dq.displayFront(); 
+
+        dq.displayRear() ;
 
     }
 }

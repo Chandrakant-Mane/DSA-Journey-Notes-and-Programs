@@ -18,8 +18,8 @@ public class leetCodeQ232 {
         }
 
         public int peek() {
-            if (output.empty()) {
-                while (!input.empty()) {
+            if (output.isEmpty()) {
+                while (!input.isEmpty()) {
                     output.push(input.pop());
                 }
             }
