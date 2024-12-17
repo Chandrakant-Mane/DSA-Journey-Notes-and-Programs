@@ -41,7 +41,7 @@ public class leetCodeQ973M2 {
             ans[i][0] = t.x ;
             ans[i][1] = t.y ;
         }
-g
+
         for (int i = 0; i < k; i++) {
             System.out.print(ans[i][0] + " " + ans[i][1]);
             System.out.println();
