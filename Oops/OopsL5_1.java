@@ -7,7 +7,7 @@ abstract class Plane2{
 }
 
 class CargoPlane1 extends Plane2{
-    public void takeoff(){
+    public void takeoff( ){
         System.out.println("CargoPlane tookoff...");
     }
     public void fly(){
