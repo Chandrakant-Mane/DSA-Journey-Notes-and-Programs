@@ -22,6 +22,35 @@ public class leetCodeQ416 {
         dp[idx][target] = (ans) ? 1 : 0;
         return ans;
     }
+
+    //      Tabulation 
+    public static boolean canPartition(int[] nums) {
+        int sum = 0;
+        for (int ele : nums)
+            sum += ele;
+        if (sum % 2 == 1)
+            return false;
+        int n = nums.length;
+        int target = sum / 2;
+
+        int[][] dp = new int[n][target + 1];
+
+        for (int i = 0; i < dp.length; i++) {
+            for (int j = 0; j < dp[0].length; j++) {
+                boolean ans = false;
+                boolean skip = (i > 0) ? (dp[i - 1][j] == 1) : (j == 0);
+                if (j - nums[i] < 0)
+                    ans = skip; // Only Valid for +ve No.
+                else {
+                    boolean take = (i > 0) ? (dp[i - 1][j - nums[i]] == 1) : (j == 0);
+                    ans = skip || take;
+                }
+                dp[i][j] = (ans) ? 1 : 0;
+            }
+        }
+
+        return (dp[n - 1][target] == 1);
+    }
     public static void main(String[] args) {
         int[] nums = { 1, 5, 11, 5 } ;
 
@@ -42,5 +71,6 @@ public class leetCodeQ416 {
         else 
             System.out.println(subset(nums, sum/2, 0, dp));
 
+        System.out.println(canPartition(nums));
     }
 }
