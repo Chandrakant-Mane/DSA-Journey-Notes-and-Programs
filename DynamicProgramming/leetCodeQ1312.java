@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class leetCode1312 {
+public class leetCodeQ1312 {
         //      Recursion + Memoization
     public static int lcs(int i, int j, StringBuilder a, StringBuilder b, int[][] dp) {
         if (i < 0 || j < 0)

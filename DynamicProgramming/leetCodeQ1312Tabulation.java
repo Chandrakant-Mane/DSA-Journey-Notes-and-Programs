@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class leetCode1312Tabulation {
+public class leetCodeQ1312Tabulation {
     //       Tabulation (memoization conversion to tabulation)
     public static int longestCommonSubsequence(String a, String b) {
         int m = a.length(), n = b.length();
