@@ -1,6 +1,6 @@
 package DynamicProgramming;
 
-public class leetCode516Tabulation {
+public class leetCodeQ516Tabulation {
             //      Tabulation 
     public static int longestCommonSubsequence(String a, String b) {
         int m = a.length(), n = b.length();
