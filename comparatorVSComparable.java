@@ -14,7 +14,7 @@ public class comparatorVSComparable {
         }
 
         public String toString(){
-            return "Student [ ane : " + age + " , name : " + name + " ]" ;
+            return "Student [ age : " + age + " , name : " + name + " ]" ;
         }
 
         public int compareTo(Student that){
@@ -74,11 +74,11 @@ public class comparatorVSComparable {
         stud.add(new Student(25, "Vinayak")) ;
         stud.add(new Student(22, "Mahesh")) ;
         stud.add(new Student(30, "Om")) ;
-        stud.add(new Student(28, "Shree")) ;
+        stud.add(new Student(15, "Shree")) ;
 
         Student s1 = new Student(0, null) ;
 
-        Collections.sort(stud , s1.comStud) ;
+        Collections.sort(stud) ;
 
         for (Student s : stud) {
             System.out.println(s);
@@ -87,7 +87,7 @@ public class comparatorVSComparable {
 
         System.out.println();
         System.out.println();
-        Collections.sort(stud);
+        Collections.sort(stud , s1.comStud);
 
         for(Student s : stud){
             System.out.println(s);
