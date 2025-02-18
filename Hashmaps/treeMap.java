@@ -15,5 +15,11 @@ public class treeMap {
         for(String key : map.keySet()){
             System.out.println(key + " " + map.get(key));
         }
+        for (Integer val : map.values()) {
+            System.out.println(val);
+        }
+        for (Object pair : map.entrySet()) {
+            System.out.println(pair);
+        }
     }
 }

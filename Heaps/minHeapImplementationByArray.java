@@ -61,7 +61,7 @@ public class minHeapImplementationByArray {
         }
 
         void downHeapify(int i){
-            if(i >= size-1 ) return ;
+            // if(i >= size-1 ) return ;
             int lc = 2 * i + 1 ;
             int rc = 2 * i + 2 ;
             int minIdx = i ;
