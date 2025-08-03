@@ -42,6 +42,27 @@ This repository is structured by topic, making it easy to navigate and find code
 
 A significant portion of this repository consists of solutions to LeetCode problems. These files are typically named `leetCodeQ[problem_number].java`, making it easy to find a solution for a specific problem.
 
+
+## HandWritten Notes Example :- 
+
+### Recursion (Calls And Euler's Tree) :
+
+![repo example_1](https://github.com/user-attachments/assets/5cd2cea7-0393-4519-8497-7e964f350814)
+![repo example_2](https://github.com/user-attachments/assets/2d7dc9c9-b3a6-4f4c-9113-2e608f592d11)
+
+### MergeSort Visualization :
+
+![repo example_3](https://github.com/user-attachments/assets/cd0a69e5-79a3-403e-8328-b4f6bbc6aa75)
+![repo example_4](https://github.com/user-attachments/assets/080e8873-4834-466b-8f83-3d9a0f99cecd)
+
+### Dynamic Programming Visualization (Tabulation) :
+
+![repo example_5](https://github.com/user-attachments/assets/be13ae6b-0418-4631-a13e-d401911a5e98)
+
+
+Complete HandWritten Notes of all Concepts in DSA . This is just and example of few topic . Explore the Repo Everytopic and EveryConcept is there . 
+Enjoy .
+
 ## Code Example
 
 Here is an example of the Quick Sort algorithm implementation found in the `AdvanceSorting` directory.
@@ -98,7 +119,9 @@ public class quickSortAlgo {
 } 
 ```
 ## Repository Structure :- 
-<img width="2232" height="2628" alt="Repo Structure _- - visual selection" src="https://github.com/user-attachments/assets/29816f0f-6cab-4025-a4ca-bc5266279d8d" />
+<img width="2232" height="2506" alt="Repo Structure _- - visual selection" src="https://github.com/user-attachments/assets/e1dcd875-235b-469d-8f2d-129f1bc45bd1" />
+
+
 
 
 ## How to Use This Repository
