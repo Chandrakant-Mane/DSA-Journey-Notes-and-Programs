@@ -118,6 +118,7 @@ public class quickSortAlgo {
     }
 } 
 ```
+To Understand the code , go to notes section open advanceSorting pdf understand the logic and then mote to code part . 
 ## Repository Structure :- 
 <img width="2232" height="2506" alt="Repo Structure _- - visual selection" src="https://github.com/user-attachments/assets/e1dcd875-235b-469d-8f2d-129f1bc45bd1" />
 
