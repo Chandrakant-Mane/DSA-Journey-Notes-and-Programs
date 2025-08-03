@@ -1,7 +1,7 @@
 # DSA Journey: Notes and Programs
 [![Ask DeepWiki](https://devin.ai/assets/askdeepwiki.png)](https://deepwiki.com/Chandrakant-Mane/DSA-Journey-Notes-and-Programs)
 
-This repository is a comprehensive collection of my personal notes and Java programs created during my Data Structures and Algorithms (DSA) learning journey. It covers a wide range of topics, from fundamental programming concepts to advanced algorithms, and includes solutions to over 150 LeetCode problems.
+This repository is a comprehensive collection of my personal handwritten notes and Java programs created during my Data Structures and Algorithms (DSA) learning journey. It covers a wide range of topics, from fundamental programming concepts to advanced algorithms, and includes solutions to over 150 LeetCode problems.
 
 ## What's Inside?
 
