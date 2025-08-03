@@ -23,6 +23,14 @@ public class lowerUpperCase {
 
         String x = "" ; // Empty String 
         System.out.println(x.length());
+        
+        String l = "mane" ;
+        String m = "mane" ;
+        String n = new String("mane") ;
+    
+        System.out.println(l.hashCode());
+        System.out.println(m.hashCode());
+        System.out.println(n.hashCode());
 
     }
     

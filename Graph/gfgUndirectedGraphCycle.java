@@ -58,7 +58,10 @@ public class gfgUndirectedGraphCycle {
                 if(bfs( i , adj , vis)) 
                     return true;
 
-                // ans = dfs( i , adj , vis , -1 , ans) ;
+                ans = dfs( i , adj , vis , -1 , ans) ;
+                if( ans){
+                    return ans ; 
+                }
             }
         }
         

@@ -7,13 +7,13 @@ public class substring {
     //    System.out.println(s.substring(1,4)); // bcd ( i to j-1 )
 
     //    System.out.println(s.substring(2,3));
-    //    System.out.println(s.substring(0, 5));
-    for (int i = 0; i < s.length(); i++) {
-        for (int j = i+1; j < s.length()+1; j++) {
-            System.out.print(s.substring(i, j) + " "); 
-        }
-        System.out.println();
-    }
+       System.out.println(s.substring(0, 11));
+    // for (int i = 0; i < s.length(); i++) {
+    //     for (int j = i+1; j < s.length()+1; j++) {
+    //         System.out.print(s.substring(i, j) + " "); 
+    //     }
+    //     System.out.println();
+    // }
     }
     
 }

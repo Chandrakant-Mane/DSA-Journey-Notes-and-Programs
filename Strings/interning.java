@@ -10,9 +10,9 @@ public class interning {
         // s.charAt(2) = "d";    Error 
         // s = "Madhav";
         // q = "Madhav";
-        System.out.println(s);
-        System.out.println(q);
-        System.out.println(t);
+        System.out.println(s == q);
+        // System.out.println(q);
+        System.out.println(t==s);
 
 
 

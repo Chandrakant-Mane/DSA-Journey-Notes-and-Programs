@@ -33,8 +33,8 @@ public class leetCodeQ841 {
         int n = adj.size() ;
         boolean[] vis = new boolean[n] ;
         // vis[0] = true ;
-        // bfs(0 , vis , adj) ;
-        dfs(0 , vis , adj) ;
+        bfs(0 , vis , adj) ;
+        // dfs(0 , vis , adj) ;
         for(boolean ele : vis){
             if(ele == false)
                 return false ;

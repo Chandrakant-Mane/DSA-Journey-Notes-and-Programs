@@ -11,8 +11,8 @@ public class leetCodeQ322 {
         }
         if (dp[i][amount] != -1)
             return dp[i][amount];
-        if (amount < 0)
-            return 0;
+        // if (amount < 0)  Not Needed
+        //     return 0;
         long skip = coin(coins, amount, i - 1, dp);
         if (amount - coins[i] < 0)
             return dp[i][amount] = skip;
