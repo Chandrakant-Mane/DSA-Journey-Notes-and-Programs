@@ -97,6 +97,9 @@ public class quickSortAlgo {
     }
 } 
 ```
+## Repository Structure :- 
+<img width="2232" height="2628" alt="Repo Structure _- - visual selection" src="https://github.com/user-attachments/assets/29816f0f-6cab-4025-a4ca-bc5266279d8d" />
+
 
 ## How to Use This Repository
 
