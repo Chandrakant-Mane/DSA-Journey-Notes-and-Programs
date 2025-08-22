@@ -241,7 +241,7 @@ We welcome contributions! Please see our [Contributing Guidelines](CONTRIBUTING.
 
 - **GitHub Issues**: [Report bugs or request features](https://github.com/Chandrakant-Mane/DSA-Journey-Notes-and-Programs/issues)
 - **Discussions**: Join our [GitHub Discussions](https://github.com/Chandrakant-Mane/DSA-Journey-Notes-and-Programs/discussions)
-- **Email**: [Your Email] (Optional)
+- **Email**: manechandrakant837@gmail.com
 
 ## ⭐ Show Your Support
 
