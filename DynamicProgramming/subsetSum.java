@@ -2,9 +2,6 @@ package DynamicProgramming;
 
 import java.util.ArrayList;
 
-import Basic.simpleinterest;
-import Conditionals.ternary;
-import Pattern_Printing.Composite_Pattern.starBridge;
 
 public class subsetSum {
             // Recursion + Memoization   
